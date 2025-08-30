@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+const REPO = 'review-agent-frontend'
+
 export default defineConfig({
     plugins: [react()],
-    server: { host: true, port: 5173 },
-    preview: { host: true, port: 7860 },
+    base: `/${REPO}/`,
     build: { outDir: 'dist' },
 })
