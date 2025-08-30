@@ -5,6 +5,6 @@ const REPO = 'review-agent-frontend'
 
 export default defineConfig({
     plugins: [react()],
-    base: `/${REPO}/`,
+    base: `/`,
     build: { outDir: 'dist' },
 })
